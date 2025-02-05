@@ -1,4 +1,4 @@
-import {IsString, IsEmail, IsNotEmpty,MinLength} from 'class-validator';
+import {IsString, IsNotEmpty,MinLength} from 'class-validator';
 export class CreatePokemonDto {
     @IsString() @IsNotEmpty()
     nombre: string;

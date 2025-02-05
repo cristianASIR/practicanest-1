@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { GeneracionesModule } from './generaciones/generaciones.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { PokemonModule } from './pokemon/pokemon.module';
+import { ApiModule } from './api/api.module';
 
 @Module({
   imports: [ConfigModule.forRoot({isGlobal: true,}),
@@ -35,7 +36,8 @@ import { PokemonModule } from './pokemon/pokemon.module';
       synchronize:true
     }),
     PokemonModule,
-    GeneracionesModule
+    GeneracionesModule,
+    ApiModule
   ],
   controllers: [],
   providers: [],
