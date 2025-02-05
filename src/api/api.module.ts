@@ -1,13 +1,8 @@
 import { Module } from '@nestjs/common';
-import { ApiService } from './api.service';
-import { ApiController } from './api.controller';
-import { PostModule } from './post/post.module';
-import { UserModule } from './user/user.module';
 import { PostsModule } from './posts/posts.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
-  controllers: [ApiController],
-  providers: [ApiService],
-  imports: [PostModule, UserModule, PostsModule],
+  imports: [PostsModule, UsersModule]
 })
 export class ApiModule {}
