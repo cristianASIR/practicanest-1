@@ -7,9 +7,7 @@ export class User {
     @PrimaryGeneratedColumn() // Genera un id autoincremental, si sólo fuera clave sería @PrimaryColumn()
     id: number;
     @Column()
-    titulo: string;
-    @Column()
-    contenido: string;
+    nombre: string;
     @OneToMany(() => Posts, (post) => post.user) // Fecha de actualización automática
     posts: Posts[];
 }
