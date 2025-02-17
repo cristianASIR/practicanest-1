@@ -6,6 +6,8 @@ import { PokemonModule } from './pokemon/pokemon.module';
 import { ApiModule } from './api/api.module';
 import { UsersModule } from './_api/users/users.module';
 import { PostsModule } from './_api/posts/posts.module';
+import { AutorModule } from './_biblio/autor/autor.module';
+import { LibroModule } from './_biblio/libro/libro.module';
 
 @Module({
   imports: [ConfigModule.forRoot({isGlobal: true,}),
@@ -41,7 +43,9 @@ import { PostsModule } from './_api/posts/posts.module';
     GeneracionesModule,
     ApiModule,
     UsersModule,
-    PostsModule
+    PostsModule,
+    AutorModule,
+    LibroModule
   ],
   controllers: [],
   providers: [],
