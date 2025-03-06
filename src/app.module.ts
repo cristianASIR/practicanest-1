@@ -8,6 +8,7 @@ import { UsersModule } from './_api/users/users.module';
 import { PostsModule } from './_api/posts/posts.module';
 import { AutorModule } from './_biblio/autor/autor.module';
 import { LibroModule } from './_biblio/libro/libro.module';
+import { PeliculasModule } from './peliculas/peliculas.module';
 
 @Module({
   imports: [ConfigModule.forRoot({isGlobal: true,}),
@@ -45,7 +46,8 @@ import { LibroModule } from './_biblio/libro/libro.module';
     UsersModule,
     PostsModule,
     AutorModule,
-    LibroModule
+    LibroModule,
+    PeliculasModule
   ],
   controllers: [],
   providers: [],
